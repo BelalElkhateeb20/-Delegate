@@ -6,7 +6,7 @@
         public string Name { get; set; }
         public decimal TotalSales { get; set; }
         public string Gender { get; set; }
-        public string location {get; set;}
+        private string location { get; set; }
 
         private string type;
         public string Type
@@ -20,6 +20,17 @@
                 type = value;
             }
         }
-    }
+        public string Location
+        {
+            get
+            {
+                return location;
+            }
+            set
+            {
+                location = value;
+            }
+        }
 
+    }
 }
