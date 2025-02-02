@@ -6,6 +6,19 @@
         public string Name { get; set; }
         public decimal TotalSales { get; set; }
         public string Gender { get; set; }
+
+        private string type;
+        public string Type
+        {
+            get
+            {
+                return type;
+            }
+            set
+            {
+                type = value;
+            }
+        }
     }
 
 }
